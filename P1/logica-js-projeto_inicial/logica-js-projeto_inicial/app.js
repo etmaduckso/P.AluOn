@@ -1,5 +1,6 @@
 alert('Bem vido ao jogo N° Secreto!');
-let numeroSecreto = 5;
+let numeroMaximo = 5000;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
@@ -7,7 +8,7 @@ let tentativas = 1;
 //WHILE --> É USADO PARA REPÉTIR A OPERAÇÃO ENQUANTO O RESULTADO OU A CONDIÇÃO DA FUNÇÃO NÃO FOR ATINGIDO.
 
 while (chute != numeroSecreto) {
-    chute = prompt('Escolha um número entre 1 e 10');
+    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
 
     // Condição para validar a escolha do número secreto no prompt.
 
