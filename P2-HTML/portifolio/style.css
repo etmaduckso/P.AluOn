@@ -1,5 +1,34 @@
-body {
-    background-color: teal;
-    color: ;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: teal;
+    color: #000000;
+}
+
+.titulo-destaque {
+    color: #000000;
+}
+
+.apresentacao {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+}
